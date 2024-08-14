@@ -108,6 +108,15 @@ header {
     margin-bottom: 10px;
 }
 
+/* Quote Styles */
+.quote {
+    color: #aaaaaa;  /* Pale grey color */
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
 /* Responsive Design with Media Queries */
 @media (max-width: 768px) {
     .profile-header {
