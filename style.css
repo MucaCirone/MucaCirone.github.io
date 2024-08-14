@@ -16,7 +16,7 @@ body {
 header {
     width: 100%;
     max-width: 100%;
-    background-color: #2c3e50; /* Change this to customize the navbar background color */
+    background-color: #2c3e50;
     padding: 10px 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,7 @@ header {
 }
 
 .navbar ul li a {
-    color: #ecf0f1; /* Change this to customize the navbar text color */
+    color: #ecf0f1;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -49,7 +49,7 @@ header {
 }
 
 .navbar ul li a:hover {
-    background-color: #34495e; /* Change this to customize the navbar hover background color */
+    background-color: #34495e;
 }
 
 /* Container Styles */
@@ -61,30 +61,27 @@ header {
     max-width: 90%; /* Allows the container to be responsive */
     width: 100%;
     text-align: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 10%; /* Increased left and right margins */
     box-sizing: border-box;
 }
 
 /* Profile Header Styles */
 .profile-header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .profile-picture img {
-    width: 100%; /* Makes image responsive */
-    max-width: 150px; /* Restrict maximum size */
+    width: 150px;
     height: auto;
-    border-radius: 8px; /* Ensures the image remains rectangular */
-    margin-bottom: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
 .name-title {
+    flex: 1;
     text-align: center;
-    margin-top: 10px;
 }
 
 /* Section Styles */
@@ -113,6 +110,12 @@ header {
         align-items: center;
     }
 
+    .profile-picture img {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100px; /* Smaller image on smaller screens */
+    }
+
     .navbar ul {
         flex-direction: column;
     }
@@ -121,11 +124,8 @@ header {
         margin-bottom: 10px;
     }
 
-    .profile-picture img {
-        max-width: 100px; /* Smaller image on smaller screens */
-    }
-
     .container {
         padding: 10px;
+        margin: 20px 5%; /* Adjusted for smaller screens */
     }
 }
