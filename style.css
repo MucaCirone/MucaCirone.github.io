@@ -12,9 +12,12 @@ body {
 
 header {
     width: 100%;
-    background-color: #333;
+    background-color: #2c3e50;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar {
@@ -27,23 +30,26 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: #ecf0f1;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    background-color: #555;
+    background-color: #34495e;
 }
 
 .container {
@@ -54,8 +60,7 @@ header {
     max-width: 600px;
     width: 100%;
     text-align: left;
-    margin-bottom: 40px;
-    margin-top: 20px; /* Add space below the navbar */
+    margin: 40px 0;
 }
 
 .profile-header {
@@ -65,19 +70,20 @@ header {
 }
 
 .profile-picture img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
     object-fit: cover;
     margin-right: 20px;
 }
 
 .name-title {
     flex: 1;
+    text-align: center;
 }
 
 h1 {
-    color: #555;
+    color: #2c3e50;
     margin-bottom: 10px;
 }
 
@@ -87,7 +93,7 @@ p {
 }
 
 a {
-    color: #007bff;
+    color: #3498db;
     text-decoration: none;
 }
 
