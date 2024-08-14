@@ -60,7 +60,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 90%; /* Allows the container to be responsive */
     width: 100%;
-    text-align: left;
+    text-align: center; /* Center the text inside the container */
     margin: 40px 10%; /* Increased left and right margins */
     box-sizing: border-box;
 }
@@ -88,6 +88,7 @@ header {
 /* Section Styles */
 .section {
     margin-top: 40px;
+    text-align: center; /* Center the text inside sections */
 }
 
 .section h3 {
