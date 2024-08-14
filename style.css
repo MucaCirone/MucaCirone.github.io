@@ -55,13 +55,13 @@ header {
 /* Container Styles */
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px 100px 40px 100px;  /* top left bottom right */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
+    max-width: 85%;  /* Adjust max-width for a narrower content block */
     width: 100%;
     text-align: center;
-    margin: 40px 10%;
+    margin: 10px auto;  /* Center the container */
     box-sizing: border-box;
 }
 
