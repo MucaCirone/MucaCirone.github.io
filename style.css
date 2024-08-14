@@ -69,7 +69,9 @@ header {
 .profile-header {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the content horizontally */
     margin-bottom: 20px;
+    text-align: center; /* Center the text inside the name-title */
 }
 
 .profile-picture img {
@@ -81,7 +83,6 @@ header {
 
 .name-title {
     flex: 1;
-    text-align: center;
 }
 
 /* Section Styles */
@@ -108,12 +109,15 @@ header {
     .profile-header {
         flex-direction: column; /* Stack the picture and title vertically */
         align-items: center;
-        text-align: center; /* Ensure text is centered in smaller screens */
+        text-align: center; /* Ensure text is centered on smaller screens */
+    }
+
+    .profile-picture {
+        margin-bottom: 10px;
     }
 
     .profile-picture img {
         margin-right: 0; /* Remove right margin */
-        margin-bottom: 10px; /* Add margin below the picture */
         max-width: 100px; /* Smaller image on smaller screens */
     }
 
